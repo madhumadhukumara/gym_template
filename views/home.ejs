@@ -1,0 +1,57 @@
+<section class="home" id="home">
+
+    <div class="swiper home-slider">
+
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide slide" style="background: url(images/home-bg-1.jpg) no-repeat;">
+              <div class="content">
+                  <span>be strong, be fit</span>
+                  <h3>Make yourself stronger than your excuses.</h3>
+                  <a href="#contactus" class="btn">get started</a>
+              </div>
+          </div>
+
+          <div class="swiper-slide slide" style="background: url(images/home-bg-2.jpg) no-repeat;">
+              <div class="content">
+                  <span>be strong, be fit</span>
+                  <h3>Make yourself stronger than your excuses.</h3>
+                  <a href="#contactus" class="btn">get started</a>
+              </div>
+          </div>
+
+          <div class="swiper-slide slide" style="background: url(images/home-bg-3.jpg) no-repeat;">
+              <div class="content">
+                  <span>be strong, be fit</span>
+                  <h3>Make yourself stronger than your excuses.</h3>
+                  <a href="#contactus" class="btn">get started</a>
+              </div>
+          </div>
+
+        </div>
+
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript">
+     var swiper = new Swiper(".home-slider", {
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+        },
+        loop:true,
+        slidesPerView: 1,
+        autoplay:{
+          delay:5000,
+        },
+        speed:800,
+      });
+    </script>
+</section>

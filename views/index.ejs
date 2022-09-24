@@ -1,0 +1,41 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>complete responsive fitness and gym website design</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <%- include('partials/header') %>
+
+    <%- include('home') %>
+    <%- include('aboutus') %>
+    <%- include('features') %>
+    <%- include('pricing') %>
+    <%- include('triners') %>
+    <%- include('banner') %>
+    <%- include('review') %>
+    <%- include('contactus') %>
+
+    <%- include('partials/footer') %>
+    <script type="text/javascript">
+      let menu = document.querySelector('#menu-btn');
+      let navbar = document.querySelector('.header .navbar');
+
+      menu.onclick = () =>{
+         menu.classList.toggle('fa-times');
+         navbar.classList.toggle('active');
+      };
+
+      window.onscroll = () =>{
+        menu.classList.remove('fa-times');
+        navbar.classList.remove('active');
+      };
+      
+    </script>
+  </body>
+</html>
